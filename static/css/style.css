@@ -1,12 +1,91 @@
-html {overflow-y: scroll}
-:root { --bgcolor: white; --fontcolor: #444; --linkcolor: #00e; --visitedcolor: #551a8b; --precolor: #fff; --prebgcolor: #000;}
-@media (prefers-color-scheme: dark) { :root { --bgcolor: black; --fontcolor: white; --linkcolor: #5bf; --visitedcolor: #ae5ee0; --precolor: #fff; --prebgcolor: #383838;}}
-body{max-width:800px;margin:40px auto;padding:0 10px;font:14px/1.5 monospace;color:var(--fontcolor); background: var(--bgcolor)}a:link{color: var(--linkcolor)}a:visited{color: var(--visitedcolor)}a:active{color: var(--visitedcolor)}h1,h2,h3{line-height:1.2}
-p > code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
-code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
-pre{color: var(--precolor); background: var(--prebgcolor); padding:24px; overflow-x: auto}
-article{padding:24px 0}
-.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
-figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
-figure {margin: auto}
-img {display: block; max-width: 100%; height: auto; margin: auto}
+html {overflow-y: scroll;}
+
+/* Use Catppuccin Latte for light mode users */
+:root {
+   --bgcolor: #EFF1F5; /* Latte Base */
+   --fontcolor: #4C4F69; /* Latte Text */
+   --linkcolor: #7287FD; /* Latte Lavender */
+   --visitedcolor: #8839ef; /* Latte Mauve */
+   --precolor: #4C4F69; /* Latte Text (for <code> elements) */
+   --prebgcolor: #E6E9EF; /* Latte Mantle (for <code> element backgrounds) */
+}
+
+/* Use Catppuccin Mocha for dark mode users */
+@media (prefers-color-scheme: dark) {
+   :root {
+      --bgcolor: #1E1E2E; /* Mocha Base */
+      --fontcolor: #CDD6F4; /* Mocha Text */
+      --linkcolor: #B4BEFE; /* Mocha Lavender */
+      --visitedcolor: #CBA6F7; /* Mocha Mauve */
+      --precolor: #CDD6F4; /* Mocha Text (for <code> elements) */
+      --prebgcolor: #181825; /* Mocha Mantle (for <code> element backgrounds) */
+   }
+}
+
+body {
+   max-width: 800px;
+   margin: 40px auto;
+   padding: 0 10px;
+   font: 16px/1.75 monospace;
+   letter-spacing: 0.03em;
+   color: var(--fontcolor);
+   background: var(--bgcolor);
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+   text-align: justify;
+}
+
+a:link {color: var(--linkcolor);}
+a:visited {color: var(--visitedcolor);}
+a:active {color: var(--visitedcolor);}
+a:focus, button:focus {
+   outline: 3px dashed var(--linkcolor);
+   outline-offset: 2px;
+}
+
+/* Deal with headings by setting line height and padding
+   so that they're not so bunched up in articles */
+h1, h2, h3 {line-height: 1.2;}
+h1 {
+    padding-top: 30px;
+}
+h2 {
+    padding-top: 25px;
+}
+h3 {
+    padding-top: 20px;
+}
+
+p > code, code {
+   color: var(--precolor);
+   background: var(--prebgcolor);
+   padding: 2px;
+   font-family: monospace;
+   text-align: left; /* Prevent code from being justified */
+}
+pre {
+   color: var(--precolor);
+   background: var(--prebgcolor);
+   padding: 24px;
+   overflow-x: auto;
+   font-family: monospace;
+   text-align: left; /* Prevent <pre> from being justified */
+}
+article {padding: 24px 0;}
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+}
+figcaption {
+   color: #A6ADC8; /* Muted color for captions */
+   font: 12px/1.5 monospace;
+   text-align: center;
+}
+figure {margin: auto;}
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   margin: auto;
+}
