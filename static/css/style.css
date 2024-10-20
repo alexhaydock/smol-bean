@@ -31,7 +31,6 @@ body {
    color: var(--fontcolor);
    background: var(--bgcolor);
    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-   text-align: justify;
 }
 
 a:link {color: var(--linkcolor);}
@@ -60,7 +59,7 @@ p > code, code {
    background: var(--prebgcolor);
    padding: 2px;
    font-family: monospace;
-   text-align: left; /* Prevent code from being justified */
+   text-align: left; /* Ensure <code> is never justified */
 }
 pre {
    color: var(--precolor);
@@ -68,7 +67,7 @@ pre {
    padding: 24px;
    overflow-x: auto;
    font-family: monospace;
-   text-align: left; /* Prevent <pre> from being justified */
+   text-align: left; /* Ensure <pre> is never justified */
 }
 article {padding: 24px 0;}
 .center {
