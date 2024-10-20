@@ -23,3 +23,8 @@ Then add the following to your `hugo.toml`:
 ```toml
 theme = 'smol-bean'
 ```
+
+Changes to the upstream theme can be imported into your local Hugo working directory with:
+```sh
+git submodule update --remote themes/smol-bean
+```
