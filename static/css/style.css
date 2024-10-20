@@ -44,9 +44,13 @@ a:focus, button:focus {
 /* Deal with headings by setting line height and padding
    so that they're not so bunched up in articles */
 h1, h2, h3 {line-height: 1.2;}
+/* Not padding h1 anymore since it added too much space at the beginning
+   of articles and in theory I probably won't use H1 level headings within
+   pages anyway
 h1 {
     padding-top: 30px;
 }
+*/
 h2 {
     padding-top: 25px;
 }
