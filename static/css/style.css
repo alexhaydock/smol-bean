@@ -64,6 +64,14 @@ p > code, code {
    padding: 2px;
    font-family: monospace;
    text-align: left; /* Ensure <code> is never justified */
+   /*
+      Implement a fix for the weird font sizing issue on iOS
+      See: https://nathan.rs/posts/fixing-ios-codeblocks/
+   */
+   text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
 }
 pre {
    color: var(--precolor);
