@@ -69,6 +69,7 @@ pre {
    color: var(--precolor);
    background: var(--prebgcolor);
    padding: 24px;
+   font: 14px/1.5 monospace;
    overflow-x: auto;
    font-family: monospace;
    text-align: left; /* Ensure <pre> is never justified */
