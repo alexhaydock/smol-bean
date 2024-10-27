@@ -16,7 +16,7 @@ smol-bean is based on [smol](https://github.com/colorchestra/smol), which is in 
 In your Hugo site directory, run:
 
 ```sh
-git submodule add git@github.com:alexhaydock/smol-bean.git themes/smol-bean
+git submodule add https://github.com/alexhaydock/smol-bean.git themes/smol-bean
 ```
 
 Then add the following to your `hugo.toml`:
