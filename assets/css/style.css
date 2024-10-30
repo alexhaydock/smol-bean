@@ -1,24 +1,24 @@
 html {overflow-y: scroll;}
 
-/* Use Catppuccin Latte for light mode users */
+/* Use Catppuccin Mocha theme for dark mode users (default) */
 :root {
-   --bgcolor: #EFF1F5; /* Latte Base */
-   --fontcolor: #4C4F69; /* Latte Text */
-   --linkcolor: #7287FD; /* Latte Lavender */
-   --visitedcolor: #8839ef; /* Latte Mauve */
-   --precolor: #4C4F69; /* Latte Text (for <code> elements) */
-   --prebgcolor: #E6E9EF; /* Latte Mantle (for <code> element backgrounds) */
+   --bgcolor: #1E1E2E;       /* Mocha Base */
+   --fontcolor: #CDD6F4;     /* Mocha Text */
+   --linkcolor: #B4BEFE;     /* Mocha Lavender */
+   --visitedcolor: #CBA6F7;  /* Mocha Mauve */
+   --precolor: #CDD6F4;      /* Mocha Text (for <code> elements) */
+   --prebgcolor: #181825;    /* Mocha Mantle (for <code> element backgrounds) */
 }
 
-/* Use Catppuccin Mocha for dark mode users */
-@media (prefers-color-scheme: dark) {
+/* Use Catppuccin Latte theme for light mode users */
+@media (prefers-color-scheme: light) {
    :root {
-      --bgcolor: #1E1E2E; /* Mocha Base */
-      --fontcolor: #CDD6F4; /* Mocha Text */
-      --linkcolor: #B4BEFE; /* Mocha Lavender */
-      --visitedcolor: #CBA6F7; /* Mocha Mauve */
-      --precolor: #CDD6F4; /* Mocha Text (for <code> elements) */
-      --prebgcolor: #181825; /* Mocha Mantle (for <code> element backgrounds) */
+      --bgcolor: #EFF1F5;       /* Latte Base */
+      --fontcolor: #4C4F69;     /* Latte Text */
+      --linkcolor: #7287FD;     /* Latte Lavender */
+      --visitedcolor: #8839ef;  /* Latte Mauve */
+      --precolor: #4C4F69;      /* Latte Text (for <code> elements) */
+      --prebgcolor: #E6E9EF;    /* Latte Mantle (for <code> element backgrounds) */
    }
 }
 
