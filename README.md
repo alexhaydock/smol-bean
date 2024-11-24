@@ -22,6 +22,12 @@ git submodule add https://github.com/alexhaydock/smol-bean.git themes/smol-bean
 Then add the following to your `hugo.toml`:
 ```toml
 theme = 'smol-bean'
+
+# Ensure that Hugo doesn't try to use inline CSS for our syntax highlighting.
+# (We've got that covered manually in our theme's CSS)
+[markup]
+  [markup.highlight]
+    noClasses = false
 ```
 
 Changes to the upstream theme can be imported into your local Hugo working directory with:
