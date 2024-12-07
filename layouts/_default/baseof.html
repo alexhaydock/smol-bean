@@ -21,9 +21,10 @@
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
 
-	<!-- Favicon and Apple iOS icon -->
+	<!-- Favicon, Apple iOS icon, and Web Application Manifest -->
 	<link rel="icon" href="/favicon.svg">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="manifest" href="/manifest.webmanifest">
 </head>
 <body>
 	{{ partial "header" . }}
