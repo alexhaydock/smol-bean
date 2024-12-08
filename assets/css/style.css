@@ -2,19 +2,19 @@ html {overflow-y: scroll;}
 
 /* Use Catppuccin Latte theme for light mode users (default) */
 :root {
-   --bgcolor: #EFF1F5;       /* Latte Base */
-   --fontcolor: #4C4F69;     /* Latte Text */
-   --linkcolor: #7287FD;     /* Latte Lavender */
-   --visitedcolor: #8839ef;  /* Latte Mauve */
+   --bgcolor: #EFF1F5;          /* Latte Base */
+   --fontcolor: #4C4F69;        /* Latte Text */
+   --linkcolor: #7287FD;        /* Latte Lavender */
+   --visitedcolor: #8839ef;     /* Latte Mauve */
 }
 
-/* Use Catppuccin Mocha theme for dark mode users */
+/* Use Catppuccin Frappé theme for dark mode users */
 @media (prefers-color-scheme: dark) {
    :root {
-      --bgcolor: #1E1E2E;       /* Mocha Base */
-      --fontcolor: #CDD6F4;     /* Mocha Text */
-      --linkcolor: #B4BEFE;     /* Mocha Lavender */
-      --visitedcolor: #CBA6F7;  /* Mocha Mauve */
+      --bgcolor: #303446;       /* Frappé Base */
+      --fontcolor: #c6d0f5;     /* Frappé Text */
+      --linkcolor: #babbf1;     /* Frappé Lavender */
+      --visitedcolor: #ca9ee6;  /* Frappé Mauve */
    }
 }
 
