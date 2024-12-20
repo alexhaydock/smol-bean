@@ -196,3 +196,10 @@ img {
    display: inline-flex;
    vertical-align: top;
  }
+
+/* Align Mermaid diagrams to the center in CSS because for whatever reason
+   it doesn't work when I try and do this in the config we pass to
+   mermaid.initialize() */
+.mermaid {
+  text-align: center;
+}

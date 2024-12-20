@@ -32,4 +32,14 @@
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer" . }}
 </body>
+{{ if .Page.Store.Get "hasMermaid" }}
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+	const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: isDarkMode ? "dark" : "forest",
+	});
+</script>
+{{ end }}
 </html>
