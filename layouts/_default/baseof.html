@@ -26,6 +26,8 @@
 	<link rel="icon" href="/favicon.png" type="image/png">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="manifest" href="/manifest.webmanifest">
+
+	{{ with .Site.Params.webmentionURL }}<link rel="webmention" href="{{ . }}" />{{ end }}
 </head>
 <body>
 	{{ partial "header" . }}
